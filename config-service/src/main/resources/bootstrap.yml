@@ -5,4 +5,12 @@ spring:
   cloud:
     config:
       server:
-        path
+        git:
+          uri: https://github.com/juliandiaz09/microservice
+          search-paths: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
+  security:
+    user:
+      name: root
+      password: secret0
