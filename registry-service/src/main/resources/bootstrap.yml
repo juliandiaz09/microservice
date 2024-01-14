@@ -6,3 +6,6 @@ spring:
       uri: http://localhost:8081
       username: root
       password: secret0
+      enabled: true
+      import:configserver:
+          enabled: true
