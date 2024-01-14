@@ -1,6 +1,9 @@
 #Application Configuration
 server:
   port: 8092
+  error:  
+    include-message: always
+    include-binding-errors: always
 
 # To See H2 Console in Browser:
 # http://localhost:8092/h2-console
@@ -39,4 +42,4 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://localhost:8099/eureka/
+      defaultZone: http://localhost:8099/eureka/
