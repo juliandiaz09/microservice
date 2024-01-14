@@ -6,6 +6,3 @@ spring:
       uri: http://localhost:8081
       username: root
       password: secret0
-  config:
-    name: registry-service
-    import-check: true
