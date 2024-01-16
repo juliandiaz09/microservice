@@ -1,6 +1,7 @@
 package academy.digitallab.store.shopping.entity;
 
 
+import academy.digitallab.store.shopping.model.Product;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -25,6 +26,9 @@ public class InvoiceItem  {
     //Esta anotación permite que este atributo no se registre en bd pero se pueda utilizar en el código
     @Transient
     private Double subTotal;
+
+    @Transient
+    private Product product;
 
 
     public Double getSubTotal(){
