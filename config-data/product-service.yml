@@ -12,10 +12,7 @@ spring:
   h2:
     console:
       enabled: true
-
-  application:
-    name: servicio-eureka-server
-
+      
   cloud:
     config:
       enabled: false
