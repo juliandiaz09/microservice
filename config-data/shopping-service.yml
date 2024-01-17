@@ -51,6 +51,9 @@ Feign:
     enabled: true
   circuitbreaker:
     enabled: 
+  dashboard:
+    proxy-stream-allow-list: "*"
+
     
 management:
   endpoints:

@@ -12,7 +12,7 @@ spring:
   h2:
     console:
       enabled: true
-      
+
   cloud:
     config:
       enabled: false
@@ -48,3 +48,20 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8099/eureka/
+
+
+Feign:
+  hystrix:
+    enabled: true
+  ribbon:
+    enabled: true
+  circuitbreaker:
+    enabled: 
+  dashboard:
+    proxy-stream-allow-list: "*"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
